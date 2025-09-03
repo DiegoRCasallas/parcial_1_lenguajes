@@ -12,7 +12,6 @@ def crear_expresion_regular():
     return patron
 
 def validar_id(identificador):
-    """Valida si un identificador cumple las reglas"""
     patron = crear_expresion_regular()
     return re.match(patron, identificador) is not None
 def probar_casos():
